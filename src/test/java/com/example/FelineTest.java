@@ -43,7 +43,7 @@ public class FelineTest {
 
     @Test
     public void getExceptionTest() {
-        Exception exception = assertThrows(Exception.class, () -> new Lion("Средний пол", felineSpy));
+        Exception exception = assertThrows(Exception.class, () -> new Lion("Средний пол", new Feline()));
         Assert.assertEquals(EXCEPTION_TEXT, exception.getMessage());
     }
 }
